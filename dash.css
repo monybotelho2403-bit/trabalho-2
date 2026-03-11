@@ -1,92 +1,78 @@
-.dashboard-container {
-    display: flex;
-    align-items: stretch;
-    flex: 1;
-
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
 }
 
-main{
-    flex: 1;
-    padding:30px;
-    background-color: #f8f9fa;
-
+.dashboard-container{
+display:flex;
+min-height:100vh;
 }
 
 nav{
-    width: 200px;
-    background-color: #2c3e50;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+width:220px;
+background:#1f1f1f;
+color:white;
+display:flex;
+flex-direction:column;
+padding:20px;
 }
 
-nav ul {
-    display: flex;
-    gap: 15px;
-    padding: 0;
-    list-style: none;
+nav ul{
+list-style:none;
+margin-top:20px;
 }
 
-nav a{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-    border-radius: 4px;
-    transition: background 0.3s;
+nav ul li{
+margin:10px 0;
 }
 
-nav a:hover {
-    background-color: #34495e;
-    color: #ffcc00;
+nav ul li a{
+color:white;
+text-decoration:none;
 }
 
-.perfil-usuario{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color:rgb(255, 255, 255);
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    margin-top: auto;
-
+.perfil{
+margin-top:auto;
+padding-top:20px;
+border-top:1px solid #444;
 }
 
-.perfil-usuario img{
-    width: 40px;
-    border-radius: 50%;
+main{
+flex:1;
+padding:30px;
+background:#f4f4f4;
 }
 
-.container-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+.container-cards{
+display:flex;
+gap:20px;
 }
 
 article{
-    flex: 1;
-    min-width: 250px;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0, 0.1);
+background:white;
+padding:20px;
+border-radius:8px;
+width:200px;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
 }
 
-body{
-    background-color: #dfdfdf;
-    font-family: 'Courier New', Courier, monospace;
-    color:#333333;
-
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+.btn{
+margin-top:15px;
+background:#007BFF;
+color:white;
+padding:8px;
+text-decoration:none;
+border-radius:4px;
+text-align:center;
 }
 
 footer{
-    background-color: #333;
-    color:#ffffff
-    text-align: center;
-    padding: 15px;
-    font-size: 14px;
-
+background:#1f1f1f;
+color:white;
+text-align:center;
+padding:15px;
 }
