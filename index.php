@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="dash.css">
+<title>Dashboard</title>
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+<?php include("menu.php"); ?>
+
+<main>
+
+<section class="container-cards">
+
+<article>
+<h2>Módulo de Usuários</h2>
+<p>Gerencie os acessos e permissões do sistema nesta área.</p>
+<a href="#" class="btn">Acessar</a>
+</article>
+
+<article>
+<h2>Relatórios de Vendas</h2>
+<p>Acompanhe os gráficos de desempenho deste mês.</p>
+<a href="#" class="btn">Acessar</a>
+</article>
+
+<article>
+<h2>Configurações do Servidor</h2>
+<p>Ajuste as portas do Apache e o bano de dados.</p>
+<a href="#" class="btn">Acessar</a>
+</article>
+
+</section>
+
+</main>
+
+</div>
+
+<footer>
+<p>&copy;<?php echo date ('Y'); ?> - Desenvolvido na aula de Web I</p>
+</footer>
+
+</body>
+</html>
